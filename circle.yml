@@ -3,4 +3,4 @@ deployment:
     branch: master
     commands:
       - bundle exec cap production deploy
-      - ssh $DEPLOY_TO -t 'bash -l -c "cd /var/www/dreamcatcher/current/docker && docker-compose build"''
+      - ssh $DEPLOY_TO -t 'bash -l -c "cd /var/www/dreamcatcher/current/docker && docker-compose build"'
