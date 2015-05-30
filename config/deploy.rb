@@ -39,7 +39,7 @@ set :rbenv_prefix, "#{fetch(:rbenv_command)} exec"
 set :rbenv_map_bins, %w{rake gem bundle ruby}
 set :rbenv_roles, :all
 
-set :linked_files, %w{.env}
+set :linked_files, %w{.env docker/.env}
 
 namespace :deploy do
   after :restart, :clear_cache do
