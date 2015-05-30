@@ -1,8 +1,11 @@
 require 'faraday'
 require 'faraday_middleware'
+require 'mandrill'
 
 THREAD_URL = "https://a.4cdn.org"
 IMAGE_URL = "https://i.4cdn.org"
+
+mandrill = Mandrill::API.new ENV['MANDRILL_API_KEY']
 
 exit if ARGV.empty?
 
@@ -30,6 +33,13 @@ while true
   response = client_4chan.get("#{board}/thread/#{thread}.json")
 
   if response.status == 404
+    message = {
+      "global_merge_vars" => [{name: 'url', content: URI.join(ENV['PICYO_ALBUM_URL'], album_id)}],
+     "to"=>
+        [{"email"=>ENV['MANDRILL_EMAIL_TO'],
+            "type"=>"to"}],
+      }
+    mandrill.messages.send_template ENV['MANDRILL_TEMPLATE'], nil, message, true
     exit
   end
 
