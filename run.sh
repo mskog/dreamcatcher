@@ -1,2 +1,2 @@
 #!/bin/bash
-docker-compose run -d runner bundle exec ruby dreamcatcher.rb $1
+cd docker && docker-compose run --rm runner bundle exec ruby dreamcatcher.rb $1 &
