@@ -3,9 +3,9 @@ source 'https://www.rubygems.org'
 ruby '2.2.0'
 
 gem 'grape', '~> 0.11.0'
+gem 'dotenv', '~> 2.0.1'
 
 group :development do
-  gem 'dotenv', '~> 2.0.1'
   gem 'shotgun'
 end
 
@@ -16,4 +16,5 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.1.0'
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
 end
