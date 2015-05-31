@@ -11,7 +11,7 @@ module DreamCatcher
     params do
       requires :url, type: String, regexp: URI.regexp
     end
-    post '/' do
+    post "/dreams" do
       Process.spawn "sh run.sh #{params[:url]}"
       {status: 'ok', url: params[:url]}
     end

@@ -4,6 +4,7 @@ ruby '2.2.0'
 
 gem 'grape', '~> 0.11.0'
 gem 'dotenv', '~> 2.0.1'
+gem 'rack-cors', '~> 0.4.0'
 
 group :development do
   gem 'shotgun'

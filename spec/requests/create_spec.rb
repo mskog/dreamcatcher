@@ -10,7 +10,7 @@ describe DreamCatcher::API do
   describe "Create" do
     Given{authorize ENV['HTTP_BASIC_USERNAME'], ENV['HTTP_BASIC_PASSWORD']}
 
-    When{post "/", params}
+    When{post "/dreams", params}
 
     context "with invalid authorization" do
       Given(:params){{}}
