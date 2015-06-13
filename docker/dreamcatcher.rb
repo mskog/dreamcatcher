@@ -19,7 +19,8 @@ end
 
 client_picyo = Faraday.new(ENV['PICYO_API_URL']) do |conn|
   conn.request  :url_encoded
-  conn.basic_auth(ENV['PICYO_USERNAME'], ENV['PICYO_PASSWORD'])
+  conn.headers['X-User-Email'] = ENV['PICYO_USER']
+  conn.headers['X-User-Token'] = ENV['PICYO_TOKEN']
   conn.response :json, :content_type => /\bjson$/
   conn.adapter :net_http
 end
