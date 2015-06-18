@@ -48,7 +48,7 @@ while true
   thread_data["posts"].each do |post|
     if post.key?('filename') && !uploaded_images.include?(post['tim'])
       image_url = "#{IMAGE_URL}/#{board}/#{post['tim']}#{post['ext']}"
-      client_picyo.post("albums/#{album_id}/images", {url: image_url, async: '1'})
+      client_picyo.post("album_images", {url: image_url, async: '1', album_id: album_id})
       uploaded_images << post['tim']
     end
   end
