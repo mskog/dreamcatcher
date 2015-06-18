@@ -1,6 +1,8 @@
 # Dreamcatcher
 A needlessly complicated Docker based..thing..to monitor and add images from 4chan to your Picyo services
 
+[![Dependency Status](https://gemnasium.com/mskog/dreamcatcher.svg)](https://gemnasium.com/mskog/dreamcatcher)
+
 # Disclaimer
 This project is not affiliated with 4chan in any way.
 
