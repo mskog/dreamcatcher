@@ -33,7 +33,7 @@ describe DreamCatcher::API do
 
       Given{expect(Process).to_not receive(:spawn)}
       Given(:parsed_response){JSON.parse(last_response.body)}
-      Given(:expected_response){{"error" => "url is missing, url is invalid"}}
+      Given(:expected_response){{"error" => "url is missing"}}
       Then{expect(last_response.status).to eq 400}
       And{expect(parsed_response).to eq expected_response}
     end
