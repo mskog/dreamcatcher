@@ -14,7 +14,7 @@ group :development, :test do
   gem 'rspec', '~> 3.3.0'
   gem 'rspec-given', '~> 3.7'
   gem 'rack-test', '~> 0.6.3'
-  gem 'pry-byebug', '~> 3.2'
+  gem 'pry-byebug', '~> 3.3'
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
