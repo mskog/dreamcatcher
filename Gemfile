@@ -2,7 +2,7 @@ source 'https://www.rubygems.org'
 
 ruby '2.2.0'
 
-gem 'grape', '~> 0.14'
+gem 'grape', '~> 0.15'
 gem 'dotenv', '~> 2.1'
 gem 'rack-cors', '~> 0.4.0'
 

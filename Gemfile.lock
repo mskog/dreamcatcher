@@ -1,7 +1,7 @@
 GEM
   remote: https://www.rubygems.org/
   specs:
-    activesupport (4.2.5)
+    activesupport (4.2.6)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -33,7 +33,7 @@ GEM
     equalizer (0.0.11)
     given_core (3.8.0)
       sorcerer (>= 0.3.7)
-    grape (0.14.0)
+    grape (0.15.0)
       activesupport
       builder
       hashie (>= 2.1.0)
@@ -45,7 +45,7 @@ GEM
       virtus (>= 1.0.0)
     hashie (3.4.3)
     i18n (0.7.0)
-    ice_nine (0.11.1)
+    ice_nine (0.11.2)
     json (1.8.3)
     method_source (0.8.2)
     minitest (5.8.4)
@@ -110,7 +110,7 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rbenv
   dotenv (~> 2.1)
-  grape (~> 0.14)
+  grape (~> 0.15)
   pry-byebug (~> 3.3)
   rack-cors (~> 0.4.0)
   rack-test (~> 0.6.3)
